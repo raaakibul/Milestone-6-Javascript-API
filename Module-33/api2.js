@@ -14,3 +14,20 @@ function displayUser(users){
     }
 
 }
+
+
+function loadPost(){
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response => response.json())
+        .then(data => displayPost(data))
+}
+
+function displayPost(data){
+    const ul = document.getElementById('userPost')
+    for(const post of data){
+        console.log(post);
+        const li = document.createElement('li')
+        li.innerText = `Post ${post.body}`
+        ul.appendChild(li)
+    }
+}
