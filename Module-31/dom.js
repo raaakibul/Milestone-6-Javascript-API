@@ -28,3 +28,11 @@ document.getElementById('add-friend').addEventListener('click', function(){
     `    
     friendContainer.appendChild(friendDiv);
 })
+
+document.getElementById('color-friend').addEventListener('click', function(){
+    const friendsName = document.getElementsByClassName('friend-name');
+    // console.log("object");
+    for(const friends of friendsName){
+        friends.style.color = 'red';
+    }
+})
