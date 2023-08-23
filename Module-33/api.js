@@ -52,8 +52,6 @@
 // }
 
 
-// const user = {name : 'John', email : 'raakibul@gmail.com', password :' lkasflka'}
-
 // const strigified = JSON.stringify(user);
 // console.log(user);
 // console.log(strigified);
