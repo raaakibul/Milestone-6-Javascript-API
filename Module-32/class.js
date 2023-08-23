@@ -13,9 +13,9 @@ class Support{
     }
 }
 
-const aamir = new Support('Amir');
+const amir = new Support('Amir');
 const salman = new Support('Salman');
-console.log(aamir);
+console.log(amir);
 console.log(salman);
 
  
