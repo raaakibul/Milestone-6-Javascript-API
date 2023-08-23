@@ -1,21 +1,23 @@
 console.log("object and class:");
 
 class Support{
-    name = 'Aamir';
+    name = 'Amir';
     designation = 'support web dev';
     address = "Bd";
 
-    constructor(name){
+    constructor(name, address){
         this.name = name;
+        this.address = address;
     }
     startSession(){
-        console.log("start a support session");
+        console.log( this.name, "start a support session");
+        console.log("he is in ", this.address);
     }
 }
 
-const amir = new Support('Amir');
+const amir = new Support('Amir', 'BD');
 const salman = new Support('Salman');
-console.log(amir);
-console.log(salman);
+amir.startSession();
+// console.log(salman);
 
  
