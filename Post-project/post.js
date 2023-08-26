@@ -4,12 +4,16 @@ function loadPost(){
     .then(data => displayPost(data))
 }
 
-
 function displayPost(posts){
-    ul = document.getElementById('post-item');
+    const postContainer = document.getElementById('post-item');
     for(const post of posts ){
-         const li = document.createElement('li');
-         li.innerText = post.title;
-         ul.appendChild(li);
+         const div = document.createElement('div');
+         div.classList.add('post');
+         div.innerHTML =`
+         <h3>${post.title}</h3>
+         <p>${post.body}</p>`
+         postContainer.appendChild(div);
     }
 }
+
+ 
